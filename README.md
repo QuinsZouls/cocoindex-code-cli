@@ -32,16 +32,16 @@ Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/) if you d
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-Then install the CLI:
+Then install the CLI directly from GitHub:
 
 ```bash
-uvx --prerelease=explicit --with "cocoindex>=1.0.0a16" cocoindex-code@latest --help
+pip install git+https://github.com/QuinsZouls/cocoindex-code-cli.git
 ```
 
-Or install it into your project/environment:
+Or using `uv`:
 
 ```bash
-pip install cocoindex-code
+uv pip install git+https://github.com/QuinsZouls/cocoindex-code-cli.git
 ```
 
 ## Usage
