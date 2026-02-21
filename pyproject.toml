@@ -5,11 +5,11 @@ build-backend = "hatchling.build"
 [project]
 name = "cocoindex-code"
 dynamic = ["version"]
-description = "MCP server for indexing and querying codebases using CocoIndex"
+description = "CLI tool for indexing and querying codebases using CocoIndex"
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.11"
-keywords = ["mcp", "codebase", "indexing", "vector-search", "cocoindex"]
+keywords = ["cli", "codebase", "indexing", "vector-search", "cocoindex"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -22,11 +22,9 @@ classifiers = [
 ]
 
 dependencies = [
-    "mcp>=1.0.0",
     "cocoindex[litellm]>=1.0.0a16",
     "sentence-transformers>=2.2.0",
     "sqlite-vec>=0.1.0",
-    "pydantic>=2.0.0",
     "numpy>=1.24.0",
 ]
 
@@ -41,7 +39,7 @@ dev = [
 ]
 
 [project.scripts]
-cocoindex-code = "cocoindex_code:main"
+cocoindex-code = "cocoindex_code.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/cocoindex-io/cocoindex-code"
