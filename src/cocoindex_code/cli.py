@@ -49,9 +49,9 @@ async def _async_search(
                 print("No results found.")
                 return
 
-            for i, r in enumerate(results, 1):
+            for i, r in enumerate(results):
                 print(f"\n{'='*60}")
-                print(f"Result {i + offset} | Score: {r.score:.4f}")
+                print(f"Result {i + offset + 1} | Score: {r.score:.4f}")
                 print(f"File: {r.file_path} ({r.language})")
                 print(f"Lines: {r.start_line}-{r.end_line}")
                 print(f"{'-'*60}")
