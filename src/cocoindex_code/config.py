@@ -1,4 +1,4 @@
-"""Configuration for CocoIndex Code MCP server."""
+"""Configuration for CocoIndex Code CLI."""
 
 import os
 from dataclasses import dataclass
